@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="title">
+      <h1>Survey Form</h1>
+      <p> <i>Thank you for taking the time to help us improve the platform</i> </p>
+    </header>
+
+    <form action="./result.html" method="get">
+      <div class="input text">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="input surname">
+        <label for="surname">Surname</label>
+        <input type="text" name="surname" id="surname" placeholder="Enter your surname">
+      </div>
+      <div class="input email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+      </div>
+      <div class="select role">
+        <p>Which option best describes your current role</p>
+        <select name="role" id="role">
+          <option value="select current role">Select current role</option>
+          <option value="x">xxxx</option>
+          <option value="y">yyyy</option>
+          <option value="z">zzzz</option>
+        </select>
+      </div>
+      <div class="select">
+        <p>Would you recommend this course to a friend?</p>
+        <div>
+          <input type="radio" name="recommend this course" value="Definitely, yes" id="recommend1"
+            placeholder="Enter your name">
+          <label for="recommend1">Definitely, yes</label>
+        </div>
+        <div>
+          <input type="radio" name="recommend this course" value="Maybe" id="recommend2"
+            placeholder="Enter your surname">
+          <label for="recommend2">Maybe</label>
+        </div>
+        <div>
+          <input type="radio" name="recommend this course" value="Not sure" id="recommend3"
+            placeholder="Enter your email">
+          <label for="recommend3">Not sure</label>
+        </div>
+        <div>
+          <input type="radio" name="recommend this course" value="Definitely, no" id="recommend4">
+          <label for="recommend4">Definitely, no</label>
+        </div>
+      </div>
+
+      <div class="select feature">
+        <p>What is your favorite feature of this course</p>
+        <select name="favorite feature of this course" id="role">
+          <option value="select an option">Select an option</option>
+          <option value="x">xxxx</option>
+          <option value="y">yyyy</option>
+          <option value="z">zzzz</option>
+        </select>
+      </div>
+
+      <div class="select checkbox">
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <div>
+          <input type="checkbox" name="would you like to see improved" id="frontend" value="Front-end projects">
+          <label for="frontend">Front-end Projects</label>
+        </div>
+        <div>
+          <input type="checkbox" name="would you like to see improved" id="backend" value="Back-end projects">
+          <label for="backend">Back-end Projects</label>
+        </div>
+        <div>
+          <input type="checkbox" name="would you like to see improved" id="data" value="Data Science">
+          <label for="data">Data Science</label>
+        </div>
+        <div>
+          <input type="checkbox" name="would you like to see improved" id="add" value="Additional Courses">
+          <label for="add">Additional Courses</label>
+        </div>
+      </div>
+
+      <div class="textarea">
+        <p>Any comments or suggestions?</p>
+        <textarea name="text" id="" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="btn">
+        <button type="submit">Submit</button>
+      </div>
+
+
+
+    </form>
+  </div>
+
+</body>
+
+</html>
